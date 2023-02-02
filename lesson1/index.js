@@ -1,5 +1,5 @@
 // console.log(1)
-
+// console.log(name);
 let name='name';
 const name2='name2';
 var name3='name3';
@@ -10,6 +10,15 @@ const obj={
     a:10,
 }
 obj.a=11;
-console.log(obj)
-
+// console.log(obj)
+// console.log(name4)
 var name4='Anatolii';
+
+{
+    let result =50;
+};
+    console.log(result);
+{
+    var result =50;
+};
+console.log(result);
