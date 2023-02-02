@@ -1,3 +1,7 @@
+// 'use strict'
+
+a=15;
+console.log(a);
 // console.log(1)
 // console.log(name);
 let name='name';
