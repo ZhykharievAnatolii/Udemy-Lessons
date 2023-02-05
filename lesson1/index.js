@@ -47,21 +47,34 @@
 //     Alice:800,
 // }
 
-const arr=['a','b','c'];
+// const arr=['a','b','c'];
+//
+// arr[10]=356;
+// // console.log(arr[10])
+// console.log(arr)
+// const obj={
+//     'a':0,
+//     'b':1,
+//     'c':2
+// };
+//
+// const b='b';
+//
+// obj.c=12345;
+// obj['d']=123456;
+// // console.log(arr[1]);
+// console.log(obj.d);
+// console.log(obj['b']);
+//
+// const result=confirm('Are you here?');
 
-arr[10]=356;
-// console.log(arr[10])
-console.log(arr)
-const obj={
-    'a':0,
-    'b':1,
-    'c':2
-};
 
-const b='b';
+// const answer=prompt('Are you 18?','18');
+// console.log(typeof (answer))
 
-obj.c=12345;
-obj['d']=123456;
-// console.log(arr[1]);
-console.log(obj.d);
-console.log(obj['b'])
+const answers=[];
+answers[0]=prompt('What is your name?','');
+answers[1]=prompt('What is your surname?','');
+answers[2]=prompt('What is your age?','');
+
+document.write(answers);
