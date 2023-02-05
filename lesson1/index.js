@@ -91,11 +91,15 @@
 // //
 // // alert(`Hi, ${user} !`)
 
-let incr=10,
-    decr=10;
+// let incr=10,
+//     decr=10;
+//
+// // incr++;
+// // decr--;
+// console.log(incr,decr);
+// console.log(incr++,decr--);
+// console.log(++incr,--decr);
 
-// incr++;
-// decr--;
-console.log(incr,decr);
-console.log(incr++,decr--);
-console.log(++incr,--decr);
+const isChecked=true,
+    isClose=true;
+console.log(isChecked&&isClose)
