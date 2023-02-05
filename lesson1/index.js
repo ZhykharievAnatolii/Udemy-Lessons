@@ -72,9 +72,30 @@
 // const answer=prompt('Are you 18?','18');
 // console.log(typeof (answer))
 
-const answers=[];
-answers[0]=prompt('What is your name?','');
-answers[1]=prompt('What is your surname?','');
-answers[2]=prompt('What is your age?','');
+// const answers=[];
+// // answers[0]=prompt('What is your name?','');
+// // answers[1]=prompt('What is your surname?','');
+// // answers[2]=prompt('What is your age?','');
+// //
+// // document.write(answers);
+//
+// console.log(typeof(answers));
 
-document.write(answers);
+
+// const category='toys';
+//
+// // console.log('https://someurl.com/'+category)
+// console.log(`https://someurl.com/${category}`);
+
+// const user='Anatolii';
+// //
+// // alert(`Hi, ${user} !`)
+
+let incr=10,
+    decr=10;
+
+// incr++;
+// decr--;
+console.log(incr,decr);
+console.log(incr++,decr--);
+console.log(++incr,--decr);
