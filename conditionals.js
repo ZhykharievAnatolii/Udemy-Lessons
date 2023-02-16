@@ -21,12 +21,28 @@
 // }else {
 //     console.log('Error!')
 // };
+
+// if(num<49){
+//     console.log('false!')
+// }else if(num>100){
+//     console.log('false!')
+// }else {
+//     console.log('OK!')
+// };
+// (num==47)?console.log('OK!'):console.log('false!');
+
+// switch ()-это всегда строгое сравнение!!!
+//     обычные условия не обязательно
+
 const num=50;
-if(num<49){
-    console.log('false!')
-}else if(num>100){
-    console.log('false!')
-}else {
-    console.log('OK!')
-};
-(num==47)?console.log('OK!'):console.log('false!');
+switch (num) {
+    case 49:
+        console.log('false!');
+        break;
+    case 50:
+        console.log('true');
+        break;
+    default:console.log('sorry not this time');
+        break;
+
+}
