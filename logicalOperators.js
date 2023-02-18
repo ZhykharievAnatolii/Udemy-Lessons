@@ -9,14 +9,14 @@
 // const hamburger=true;
 // const fries=false;
 
-const hamburger=5;
-const fries=0;
-if(hamburger&&fries){
-    console.log('Cool!!!' )
-}else {
-    console.log('No!')
-};
-console.log((hamburger&&fries));
+// const hamburger=5;
+// const fries=0;
+// if(hamburger&&fries){
+//     console.log('Cool!!!' )
+// }else {
+//     console.log('No!')
+// };
+// console.log((hamburger&&fries));
 
 // Результат логических операция- это всегда логическое, булевое значение
 
@@ -33,6 +33,13 @@ console.log((hamburger&&fries));
 // Undefined
 //
 // Все остальное всегда true
-
+const hamburger=3;
+const fries=1;
+const cola=0;
+if(hamburger===3&&cola===1&&fries===1){
+    console.log('Cool!!!' )
+}else {
+    console.log('No!')
+};
 
 
