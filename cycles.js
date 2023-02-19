@@ -1,12 +1,28 @@
 'use strict'
 
-const num=50;
+let num=50;
 
 
-while (){
+// while (num<=55){
+// console.log(num);
+// num++
+// };
 
-}
+// do{
+//     console.log(num);
+//     num++
+// }while (num<=55)
 
-do while (){
+// for(let i=1;i<=8;i++){
+//     // console.log(i)
+//     console.log(num);
+//     num++
+// };
 
+for(let i=1;i<10;i++){
+   if(i===6){
+       // break
+       continue
+   }
+    console.log(i);
 }
