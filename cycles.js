@@ -1,6 +1,6 @@
 'use strict'
 
-let num=50;
+// let num=50;
 
 
 // while (num<=55){
@@ -119,15 +119,29 @@ let num=50;
 
 // внутри вложенного цикла пишем не i а j
 
-let result='';
-const length=7;
+// let result='';
+// const length=7;
+//
+// for(let i=1;i<length;i++){
+//
+//     for(let j=0;j<i;j++){
+//         result +='*';
+//     }
+//     result +='\n';
+//
+// }
+// console.log(result)
 
-for(let i=1;i<length;i++){
-
+// let result='';
+// const length=7
+first: for(let i=0;i<3;i++){
+    console.log(`First level ${i}`)
     for(let j=0;j<i;j++){
-        result +='*';
+        console.log(`Second level ${j}`)
+    };
+    for(let k=0;k<j;k++){
+        if(k===2) continue first;
+        console.log(`Second level ${k}`)
     }
-    result +='\n';
 
 }
-console.log(result)
