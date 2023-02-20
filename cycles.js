@@ -134,14 +134,14 @@
 
 // let result='';
 // const length=7
-first: for(let i=0;i<3;i++){
-    console.log(`First level ${i}`)
-    for(let j=0;j<i;j++){
-        console.log(`Second level ${j}`)
-    };
-    for(let k=0;k<j;k++){
-        if(k===2) continue first;
-        console.log(`Second level ${k}`)
-    }
-
-}
+// first: for(let i=0;i<3;i++){
+//     console.log(`First level ${i}`)
+//     for(let j=0;j<i;j++){
+//         console.log(`Second level ${j}`)
+//     };
+//     for(let k=0;k<j;k++){
+//         if(k===2) continue first;
+//         console.log(`Second level ${k}`)
+//     }
+//
+// }
