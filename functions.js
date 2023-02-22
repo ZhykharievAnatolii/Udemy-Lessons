@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 
 // function showFirstMessage() {
 //     console.log('Hello,world!')
@@ -28,3 +28,37 @@
 // console.log(calcSum(10,3))
 // console.log(calcSum(11,3))
 // Никакой код, который написан после return не будет выполнятся
+
+// function ret() {
+//     let num=50;
+//     return num
+// }
+//
+// const anotherNum=ret();
+// console.log(anotherNum)
+// function ret() {
+//     var num=50;
+// }
+
+// const anotherNum=ret();
+// console.log(anotherNum)
+// console.log(num)
+// if(a+b){
+//     var number=50;
+//
+// }
+// console.log(number)
+
+// const logger=function () {
+// console.log('Hi all')
+// };
+// logger();
+// function declaration- может быть вызвана когда угодно , существует во всем потоке кода
+// function expression- существует только после ее обьявления
+
+const calcSum=(a,b)=>{return a+b}
+const calcNumbers=(a,b)=>a+b
+console.log(calcSum(2,4))
+console.log(calcNumbers(2,4))
+
+// arrow function не имеет this
