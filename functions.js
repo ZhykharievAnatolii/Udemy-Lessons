@@ -55,10 +55,43 @@
 // logger();
 // function declaration- может быть вызвана когда угодно , существует во всем потоке кода
 // function expression- существует только после ее обьявления
-
-const calcSum=(a,b)=>{return a+b}
-const calcNumbers=(a,b)=>a+b
-console.log(calcSum(2,4))
-console.log(calcNumbers(2,4))
+//
+// const calcSum=(a,b)=>{return a+b}
+// const calcNumbers=(a,b)=>a+b
+// console.log(calcSum(2,4))
+// console.log(calcNumbers(2,4))
 
 // arrow function не имеет this
+// const usdCurr=28;
+// const eurCurr=33;
+// const discount=0.9;
+//
+// function convert(amount,curr) {
+//     return curr*amount
+// }
+// function promotion(result) {
+//     console.log(result*discount)
+// }
+// const res= convert(500,eurCurr);
+// promotion(res)
+// // convert(500,usdCurr);
+//
+// console.log(res)
+
+function test() {
+    for(let i=0;i<5;i++){
+        console.log(i);
+        if(i===3)return
+    }
+    console.log('DOne!')
+}
+test()
+function doNothing() {
+    
+};
+console.log(doNothing()===undefined);
+
+// После return не ставим перенос строки!
+
+//     undefined в консоли браузера появится, при візове console.log()
+// так как конслоь єто обьект, лог єто метод, мі туда что-то помещаем, а ретерн там нет
