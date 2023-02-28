@@ -197,7 +197,7 @@ function rememberMyFilms() {
         }
     }
 }
-rememberMyFilms();
+// rememberMyFilms();
 function detectPersonalLevel() {
     if (personalMovieDB.count < 10) {
         console.log("Просмотрено довольно мало фильмов");
@@ -210,9 +210,9 @@ function detectPersonalLevel() {
     }
 
 };
-detectPersonalLevel();
+// detectPersonalLevel();
 
-console.log(personalMovieDB);
+
 /* Задание на урок:
 
 1) Первую часть задания повторить по уроку
@@ -226,12 +226,16 @@ genres
 
 P.S. Функции вызывать не обязательно*
  */
-function showMyDB() {
-    if(personalMovieDB.privat===false){
-        return personalMovieDB
-    }
+function showMyDB(hidden) {
+  if(!hidden){
+      console.log(personalMovieDB);
+  }
 };
+showMyDB(personalMovieDB.privat);
+
 function writeYourGenres() {
-    const question=prompt(`Ваш любимый жанр под номером ${}`);
-    const number=
+    for(let i=1;i<=3;i++){
+        personalMovieDB.genres[i-1]=prompt(`Ваш любимый жанр под номером ${i}`);
+    }
 }
+writeYourGenres();
