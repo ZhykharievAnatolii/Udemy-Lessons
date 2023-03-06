@@ -134,8 +134,31 @@
 // Смысл в том что мы предоставляем любую вещь,как объект, с набором совйств и методов
 
 // У строки есть методы, когда мы их используем, то JS оборачивает ее в обьект, изменяет и возвращает назад примитив
+// Когда мы создаем строки, массивы, обьекты, то все они облядают абсолютно одинаковыми методами и свойствами, с разным
+// наполнением
+// Когда мы создаем массив, мы создаем новый екземпляр прототипа массива
+// Любые конструкции прототипно наследуются от объекта
 
-let str='some';
-let strObj=new String(str);
-console.log(typeof (str));
-console.log(typeof (strObj));
+// let str='some';
+// let strObj=new String(str);
+// console.log(typeof (str));
+// console.log(typeof (strObj));
+//
+// console.dir([1,2,3]);
+
+const soldier={
+    health:400,
+    armor:100,
+    sayHello:function () {
+        console.log('hello')
+    }
+};
+const john=Object.create(soldier)
+// const john={
+//     health: 100,
+// };
+// john.__proto__=soldier;
+//
+// Object.setPrototypeOf(john,soldier)
+// console.log(john.sayHello);
+console.log(john.sayHello())
